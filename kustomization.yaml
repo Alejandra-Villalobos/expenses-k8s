@@ -1,0 +1,17 @@
+namespace: expenses-manager
+
+resources:
+  - ns.yaml
+  - database.yaml
+  - backend.yaml
+  - frontend.yaml
+  
+configMapGenerator:
+  - name: db-init-cm
+    files:
+      - init.sql
+
+secretGenerator:
+  - name: db-creds
+    envs:
+      - .env
