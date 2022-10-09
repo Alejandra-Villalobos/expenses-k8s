@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app-front
-        image: alejandravillalobos/expenses-front:0.1.2-nginx-alpine-gcp
+        image: alejandravillalobos/expenses-front:0.1.4-nginx-alpine-gcp
         resources:
           limits:
             memory: "128Mi"
